@@ -31,3 +31,7 @@ Last command is done to see the structure of JSON. In one JSON we have multiple 
   }
 ```
 
+## Tokenizer
+
+We need to implement and train a custom tokenizer for our task
+
