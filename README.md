@@ -42,3 +42,11 @@ python3 tokenizer_train.py --vocab_size=16000 --num_samples=15
 You can customize the vocabulary size and num_samples to get more representative data. 
 Your model and vocab will be saved in the vocab dir, the bins of data will also be saved there.
 
+## Model architecture
+
+In this boutique LM for the first checkpoint we will use a basic pre-norm transformer decoder. I will not use the initial tinystories dataset because I still need to figure some things out, but you can already train the model by running this command:
+
+```
+python3 model.py
+```
+It will train the model for one epoch and inference a story with the beginning 'i have a story to tell you'
