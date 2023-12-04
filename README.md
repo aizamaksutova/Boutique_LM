@@ -1,6 +1,6 @@
 # Boutique_LM
 
-## WANDB report with all the logs and explanations
+## WANDB report with all the logs and explanations + Evaluation + Experiments + Comparison with GPT-XL2
 
 [link](https://wandb.ai/aamaksutova/Boutique_LM/reports/Report-on-the-project-TinyStories---Vmlldzo2MTU3Njg3?accessToken=8veue04f24zihm7pf2294svk92nm0alnyau3xsgk63iwafcgh55k6j56kta6h9sa)
 
@@ -55,4 +55,7 @@ python3 model_new.py
 It will train the model, encoding the tokens from the .txt file you set in the train_file option in the main function.
 You can manually set the optimizer, scheduler, model parameters and tokenizer. Everything can be edited in the model.py file.
 
+## The whole pipeline
+
+You can see the whole pipeline in the .ipynb notebook [here](https://github.com/aizamaksutova/Boutique_LM/blob/main/train_pipeline.ipynb)
 
