@@ -1,5 +1,9 @@
 # Boutique_LM
 
+## WANDB report with all the logs and explanations
+
+[link](https://wandb.ai/aamaksutova/Boutique_LM/reports/Report-on-the-project-TinyStories---Vmlldzo2MTU3Njg3?accessToken=8veue04f24zihm7pf2294svk92nm0alnyau3xsgk63iwafcgh55k6j56kta6h9sa)
+
 ## Data structure
 
 Downloading data from HuggingFace
@@ -42,11 +46,13 @@ python3 tokenizer_train.py --vocab_size=16000 --num_samples=15
 You can customize the vocabulary size and num_samples to get more representative data. 
 Your model and vocab will be saved in the vocab dir, the bins of data will also be saved there.
 
-## Model architecture
+## How to train model?
 
-In this boutique LM for the first checkpoint we will use a basic pre-norm transformer decoder. I will not use the initial tinystories dataset because I still need to figure some things out, but you can already train the model by running this command:
 
 ```
 python3 model.py
 ```
-It will train the model for one epoch and inference a story with the beginning 'i have a story to tell you'
+It will train the model, encoding the tokens from the .txt file you set in the train_file option in the main function.
+You can manually set the optimizer, scheduler, model parameters and tokenizer. Everything can be edited in the model.py file.
+
+
