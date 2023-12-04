@@ -41,7 +41,7 @@ We need to implement and train a custom tokenizer for our task and then use it f
 To train the tokenizer model and use the model to tokenize out data do the following:
 
 ```
-python3 tokenizer_train.py --vocab_size=16000 --num_samples=15
+python3 tokenizer.py --vocab_size=4096 --num_samples=15
 ```
 You can customize the vocabulary size and num_samples to get more representative data. 
 Your model and vocab will be saved in the vocab dir, the bins of data will also be saved there.
@@ -50,7 +50,7 @@ Your model and vocab will be saved in the vocab dir, the bins of data will also 
 
 
 ```
-python3 model.py
+python3 model_new.py
 ```
 It will train the model, encoding the tokens from the .txt file you set in the train_file option in the main function.
 You can manually set the optimizer, scheduler, model parameters and tokenizer. Everything can be edited in the model.py file.
